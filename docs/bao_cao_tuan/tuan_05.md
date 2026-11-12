@@ -17,7 +17,7 @@
 ## 2. Trạng thái các yêu cầu chức năng (Theo `truy_vet.csv`)
 
 | Mã yêu cầu | Mức độ | Nội dung chức năng | Trạng thái | Ghi chú |
-
+| :--- | :--- | :--- | :--- | :--- |
 | **FR-01** | Bắt buộc | Đăng nhập và phân quyền 3 vai trò (Admin, HLV, Phụ huynh) | Chưa làm | Ưu tiên làm đầu tiên ở tuần6|
 | **FR-02** | Bắt buộc | Admin quản lý danh sách HLV và học viên | Chưa làm | |
 | **FR-03** | Bắt buộc | Quản lý lớp học có giới hạn sĩ số | Chưa làm | |

@@ -23,4 +23,28 @@
 | :--- | :--- | :--- | :--- | :--- |
 | **FR-01** | Bắt buộc | Đăng nhập và phân quyền 3 vai trò (Admin, HLV, Phụ huynh) | Đang làm | Giao diện xong; đang tích hợp xử lý đăng nhập và phân quyền, chưa có bằng chứng kiểm thử |
 | **FR-02** | Bắt buộc | Admin quản lý danh sách HLV và học viên | Chưa làm | Đã thiết kế giao diện tổng quan Admin; làm trong tuần 7 |
-| **FR-03** | Bắt
+| **FR-03** | Bắt buộc | Quản lý lớp học có giới hạn sĩ số | Chưa làm | Làm trong tuần 7 |
+| **FR-04** | Bắt buộc | Xếp lịch tập chặn trùng giờ (kể cả đổi lịch và dạy thay) | Chưa làm | |
+| **FR-05** | Bắt buộc | HLV thực hiện điểm danh học viên theo buổi | Chưa làm | Đã thiết kế giao diện điểm danh |
+| **FR-06** | Bắt buộc | Quản lý học phí và tính số buổi học còn lại | Chưa làm | Đã thiết kế giao diện xem học phí của phụ huynh |
+| **FR-07** | Bắt buộc | Tính bảng lương HLV và ghi nhật ký tài chính | Chưa làm | |
+| **FR-08** | Nên có | Quản lý giáo án, thông báo và hộp thư góp ý | Chưa làm | Làm sau khi xong các FR bắt buộc |
+---
+
+## 3. Vướng mắc thực tế và Đề xuất
+- **Vướng mắc:**
+  1. Do tham gia nhận đề tài trễ hơn tiến độ chung 4 tuần nên khối lượng còn lại lớn: hiện mới hoàn thành khung dự án, giao diện và thiết kế cơ sở dữ liệu, chưa có chức năng nghiệp vụ nào chạy hoàn chỉnh.
+  2. Phần mã đăng nhập và dữ liệu giả lập mới viết, chưa có bằng chứng kiểm thử (chưa có `evidence/` cho `FR-01`).
+- **Đề xuất với giảng viên:**
+  1. Em xin thầy xác nhận bản đặc tả để dự án được chuyển sang trạng thái "đã giao".
+  2. Em xin thầy thống nhất lộ trình triển khai cuốn chiếu từ tuần 7 đến tuần 12 và mốc nộp các yêu cầu mức *Bắt buộc*.
+  3. Em xin xác nhận việc sử dụng SQL Server cục bộ (Express/LocalDB) phục vụ lập trình và kiểm thử cá nhân, và việc lưu mã nguồn trên GitHub.
+
+---
+
+## 4. Kế hoạch triển khai tuần tới (Tuần 7)
+- Hoàn tất tích hợp và kiểm thử đăng nhập, phân quyền (`FR-01`); chụp bằng chứng vào `evidence/FR-01` và cập nhật `docs/truy_vet.csv`.
+- Nạp và kiểm chứng dữ liệu giả lập trên SQL Server cục bộ.
+- Hiện thực `FR-02`: Admin quản lý danh sách HLV và học viên.
+- Hiện thực `FR-03`: quản lý lớp học, giới hạn sĩ số.
+- Viết báo cáo tiến độ tuần 7.

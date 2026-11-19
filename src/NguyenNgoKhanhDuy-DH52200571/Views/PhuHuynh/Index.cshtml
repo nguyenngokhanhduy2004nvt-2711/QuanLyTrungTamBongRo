@@ -1,0 +1,49 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Khu vực phụ huynh";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bongro.css" />
+</head>
+<body class="mobile-dashboard parent-page">
+    <header class="mobile-header parent-header">
+        <div><span class="eyebrow light">KHU VỰC GIA ĐÌNH</span><h1>Xin chào, phụ huynh</h1><p>Theo dõi quá trình học tập của con</p></div>
+        <a class="logout-pill" asp-controller="DangNhap" asp-action="Logout">Thoát</a>
+        <div class="child-switch"><button class="child-active" type="button">Minh An</button><button type="button">Gia Hân</button></div>
+    </header>
+    <main class="mobile-content parent-content">
+        <section class="panel next-class">
+            <div class="card-kicker">CA HỌC SẮP TỚI</div>
+            <h2>Lớp Cơ bản 1</h2>
+            <p>Thứ Bảy 21/11 · 17:30 – 19:00 · Sân 1</p>
+            <a href="https://www.google.com/maps" target="_blank" rel="noopener">Xem đường đi trên Google Maps ↗</a>
+        </section>
+
+        <section class="parent-stats">
+            <article class="panel mini-stat"><span>CHUYÊN CẦN</span><strong>92%</strong><small>1 buổi nghỉ có phép</small><div class="progress"><i style="width:92%"></i></div></article>
+            <article class="panel mini-stat"><span>HỌC PHÍ</span><strong>2 buổi</strong><small class="warning-text">Sắp hết hạn</small><div class="fee-chip">Cần gia hạn</div></article>
+        </section>
+
+        <section class="panel feedback-card">
+            <div class="feedback-heading"><span class="card-kicker">NHẬN XÉT MỚI NHẤT</span><span class="tag tag-green">Tốt</span></div>
+            <p>Em tập trung tốt, cần luyện thêm kỹ thuật dẫn bóng tay trái.</p>
+            <small>Huấn luyện viên · 11/11/2026</small>
+        </section>
+
+        <section class="notice-card"><span class="notice-icon">!</span><div><b>Thông báo từ trung tâm</b><p>Lớp Cơ bản 1 đổi sang Sân 2 vào Chủ Nhật tuần này.</p></div></section>
+
+        <section class="panel parent-extra">
+            <div class="panel-heading"><div><h2>Thông tin học tập</h2><p>Tóm tắt trong tháng 11</p></div></div>
+            <div class="info-line"><span>Số buổi đã tham gia</span><b>11 / 12</b></div>
+            <div class="info-line"><span>Huấn luyện viên</span><b>Nguyễn Hoàng</b></div>
+            <div class="info-line"><span>Trạng thái đăng ký</span><b class="positive">Đang hoạt động</b></div>
+        </section>
+    </main>
+    <nav class="bottom-nav"><a class="selected" href="#"><span>⌂</span>Trang chủ</a><a href="#"><span>▦</span>Lịch học</a><a href="#"><span>▤</span>Kết quả</a><a href="#"><span>◈</span>Học phí</a></nav>
+</body>
+</html>

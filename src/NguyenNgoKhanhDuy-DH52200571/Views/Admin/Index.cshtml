@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Tổng quan quản trị";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bongro.css" />
+</head>
+<body class="dashboard-page admin-page">
+    <div class="admin-layout">
+        <aside class="sidebar">
+            <a class="brand sidebar-brand" href="#"><span class="brand-mark">🏀</span><span>TRUNG TÂM<br />BÓNG RỔ</span></a>
+            <div class="sidebar-label">QUẢN LÝ</div>
+            <nav class="side-nav">
+                <a class="active" href="#"><span>▦</span>Tổng quan</a>
+                <a href="#"><span>▣</span>Lớp học</a>
+                <a href="#"><span>▤</span>Lịch và sân</a>
+                <a href="#"><span>♙</span>Học viên</a>
+                <a href="#"><span>♟</span>Huấn luyện viên</a>
+                <a href="#"><span>◈</span>Học phí</a>
+                <a href="#"><span>▥</span>Bảng lương</a>
+                <a href="#"><span>♧</span>Thông báo</a>
+                <a href="#"><span>✉</span>Góp ý</a>
+            </nav>
+            <div class="sidebar-bottom"><span class="avatar avatar-orange">AD</span><span><b>Quản trị viên</b><small>Quản lý hệ thống</small></span></div>
+        </aside>
+
+        <main class="admin-main">
+            <header class="topbar">
+                <div><span class="eyebrow">THỨ TƯ, 18/11/2026</span><h1>Tổng quan</h1></div>
+                <div class="topbar-right">
+                    <input class="search-input" type="search" placeholder="Tìm học viên, lớp học..." />
+                    <span class="avatar">AD</span>
+                    <span class="top-user">Quản trị viên</span>
+                    <a class="logout-link" asp-controller="DangNhap" asp-action="Logout">Đăng xuất</a>
+                </div>
+            </header>
+
+            <section class="stat-grid">
+                <article class="stat-card"><span>Học viên</span><strong>40</strong><small class="positive">↑ 8% so với tháng trước</small></article>
+                <article class="stat-card"><span>Huấn luyện viên</span><strong>3</strong><small>Đang hoạt động</small></article>
+                <article class="stat-card"><span>Lớp đang mở</span><strong>5</strong><small>Trong tuần này</small></article>
+                <article class="stat-card"><span>Sân tập</span><strong>2</strong><small>Đang sử dụng</small></article>
+            </section>
+
+            <section class="admin-content-grid">
+                <article class="panel revenue-panel">
+                    <div class="panel-heading"><div><h2>Doanh thu theo tháng</h2><p>Thống kê doanh thu minh họa trong 6 tháng gần nhất</p></div><span class="tag tag-soft">Năm 2026</span></div>
+                    <div class="chart">
+                        <div class="chart-y"><span>20tr</span><span>15tr</span><span>10tr</span><span>5tr</span><span>0</span></div>
+                        <div class="chart-area">
+                            <div class="chart-gridlines"><i></i><i></i><i></i><i></i><i></i></div>
+                            <div class="bars">
+                                <div class="bar-group"><b style="height:43%"></b><small>T6</small></div>
+                                <div class="bar-group"><b style="height:58%"></b><small>T7</small></div>
+                                <div class="bar-group"><b style="height:51%"></b><small>T8</small></div>
+                                <div class="bar-group"><b style="height:72%"></b><small>T9</small></div>
+                                <div class="bar-group"><b style="height:63%"></b><small>T10</small></div>
+                                <div class="bar-group"><b class="bar-current" style="height:88%"></b><small>T11</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel pending-panel">
+                    <div class="panel-heading"><div><h2>Việc chờ xử lý</h2><p>Các công việc cần bạn chú ý</p></div></div>
+                    <div class="pending-row"><span><b>Đăng ký lớp</b><small>Chờ xét duyệt</small></span><span class="count">04</span></div>
+                    <div class="pending-row"><span><b>Hóa đơn học phí</b><small>Chờ xác nhận</small></span><span class="count">03</span></div>
+                    <div class="pending-row"><span><b>Góp ý mới</b><small>Chưa phản hồi</small></span><span class="count">02</span></div>
+                    <div class="pending-row"><span><b>Bảng lương tháng 11</b><small>Chưa tạo bản nháp</small></span><span class="count">01</span></div>
+                </article>
+            </section>
+
+            <section class="panel activity-panel">
+                <div class="panel-heading"><div><h2>Hoạt động gần đây</h2><p>Tổng hợp hoạt động mới nhất của trung tâm</p></div><a href="#">Xem tất cả</a></div>
+                <div class="activity-list">
+                    <div class="activity-item"><span class="activity-dot"></span><span><b>Học viên mới đăng ký</b><small>Nguyễn Minh An · Lớp Cơ bản 1</small></span><time>09:30</time></div>
+                    <div class="activity-item"><span class="activity-dot green"></span><span><b>Thanh toán được ghi nhận</b><small>Học phí tháng 11 · Lớp Nâng cao</small></span><time>08:45</time></div>
+                    <div class="activity-item"><span class="activity-dot blue"></span><span><b>Lịch tập được cập nhật</b><small>Sân 2 · Thứ Bảy</small></span><time>Hôm qua</time></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

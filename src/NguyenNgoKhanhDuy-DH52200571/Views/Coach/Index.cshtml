@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Khu vực huấn luyện viên";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bongro.css" />
+</head>
+<body class="mobile-dashboard coach-page">
+    <header class="mobile-header">
+        <div><span class="eyebrow light">THỨ TƯ, 18/11/2026</span><h1>Xin chào, huấn luyện viên</h1><p>Chúc bạn có một buổi tập hiệu quả!</p></div>
+        <a class="logout-pill" asp-controller="DangNhap" asp-action="Logout">Thoát</a>
+    </header>
+    <main class="mobile-content">
+        <section class="session-card">
+            <div class="session-top"><span class="live-dot"></span>CA ĐANG DIỄN RA</div>
+            <h2>Lớp Cơ bản 1 · Sân 1</h2>
+            <p>17:30 – 19:00 · Điểm danh mở đến hết 24 giờ</p>
+            <div class="session-meta"><span>12 học viên</span><span>•</span><span>Buổi tập hôm nay</span></div>
+        </section>
+
+        <div class="section-title-row"><div><span class="eyebrow">QUẢN LÝ LỚP</span><h2>Điểm danh học viên</h2></div><span class="tag tag-soft">03 học viên</span></div>
+
+        <form>
+            <section class="attendance-card">
+                <div class="student-head"><span class="student-avatar">NA</span><div><b>Nguyễn Minh An</b><small>HV001</small></div></div>
+                <div class="attendance-options"><label><input type="radio" name="an" checked /><span class="present">Có mặt</span></label><label><input type="radio" name="an" /><span>Vắng có phép</span></label><label><input type="radio" name="an" /><span>Vắng không phép</span></label></div>
+            </section>
+            <section class="attendance-card">
+                <div class="student-head"><span class="student-avatar purple">GH</span><div><b>Trần Gia Hân</b><small>HV002</small></div></div>
+                <div class="attendance-options"><label><input type="radio" name="han" checked /><span class="present">Có mặt</span></label><label><input type="radio" name="han" /><span>Vắng có phép</span></label><label><input type="radio" name="han" /><span>Vắng không phép</span></label></div>
+            </section>
+            <section class="attendance-card">
+                <div class="student-head"><span class="student-avatar gold">QB</span><div><b>Lê Quốc Bảo</b><small>HV003</small></div></div>
+                <div class="attendance-options"><label><input type="radio" name="bao" /><span>Có mặt</span></label><label><input type="radio" name="bao" checked /><span class="permission">Vắng có phép</span></label><label><input type="radio" name="bao" /><span>Vắng không phép</span></label></div>
+            </section>
+            <button type="button" class="btn btn-primary btn-wide" onclick="alert('Đây là giao diện mẫu. Chức năng lưu điểm danh sẽ được kết nối với cơ sở dữ liệu ở bước tiếp theo.')">Lưu điểm danh và nhận xét <span>→</span></button>
+        </form>
+
+        <section class="panel coach-next">
+            <div class="panel-heading"><div><h2>Lịch tiếp theo</h2><p>Buổi tập kế tiếp của bạn</p></div><span class="tag tag-green">Sắp tới</span></div>
+            <b>Lớp Nâng cao</b><p>Thứ Năm · 18:00 – 19:30 · Sân 2</p>
+        </section>
+    </main>
+    <nav class="bottom-nav"><a class="selected" href="#"><span>▦</span>Lịch dạy</a><a href="#"><span>▣</span>Lớp của tôi</a><a href="#"><span>◷</span>Bảng lương</a><a href="#"><span>♙</span>Hồ sơ</a></nav>
+</body>
+</html>

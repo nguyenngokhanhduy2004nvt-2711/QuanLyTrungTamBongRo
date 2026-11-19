@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Đăng nhập - Trung tâm bóng rổ";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bongro.css" />
+</head>
+<body class="login-page">
+    <main class="login-shell">
+        <section class="login-panel">
+            <a class="brand brand-login" href="/">
+                <span class="brand-mark">🏀</span>
+                <span>TRUNG TÂM BÓNG RỔ</span>
+            </a>
+
+            <div class="login-content">
+                <span class="eyebrow">WELCOME BACK</span>
+                <h1>Đăng nhập</h1>
+                <p class="muted">Đăng nhập để tiếp tục sử dụng hệ thống trung tâm.</p>
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert-error">@ViewBag.Error</div>
+                }
+
+                <form asp-controller="DangNhap" asp-action="Login" method="post" class="login-form">
+                    <label for="email">Email đăng nhập</label>
+                    <div class="field-wrap">
+                        <span class="field-icon">✉</span>
+                        <input id="email" name="email" type="email" placeholder="Nhập email của bạn" autocomplete="username" required />
+                    </div>
+
+                    <label for="matKhau">Mật khẩu</label>
+                    <div class="field-wrap">
+                        <span class="field-icon">⌑</span>
+                        <input id="matKhau" name="matKhau" type="password" placeholder="Nhập mật khẩu" autocomplete="current-password" required />
+                        <button class="show-password" type="button" onclick="togglePassword()" aria-label="Hiện hoặc ẩn mật khẩu">Hiện</button>
+                    </div>
+
+                    <div class="login-options">
+                        <label class="remember"><input type="checkbox" /> Ghi nhớ đăng nhập</label>
+                        <span class="small-note">Bảo mật tài khoản của bạn</span>
+                    </div>
+                    <button class="btn btn-primary btn-login" type="submit">ĐĂNG NHẬP <span>→</span></button>
+                </form>
+                <p class="login-foot">Bạn cần hỗ trợ? <span>Liên hệ quản trị viên</span></p>
+            </div>
+            <div class="login-copyright">© 2026 Trung tâm bóng rổ</div>
+        </section>
+
+        <section class="login-visual">
+            <div class="visual-topline"><span>TRAIN</span><i></i><span>IMPROVE</span><i></i><span>WIN</span></div>
+            <div class="court-glow"></div>
+            <div class="hoop">
+                <div class="backboard"></div>
+                <div class="rim"></div>
+                <div class="net"></div>
+            </div>
+            <div class="basketball-art"><span></span></div>
+            <div class="visual-copy">
+                <span class="eyebrow light">PLAY WITH PASSION</span>
+                <h2>Chinh phục<br />mọi giới hạn.</h2>
+                <p>Rèn luyện kỹ năng · Phát triển thể chất · Bứt phá mỗi ngày</p>
+            </div>
+            <div class="court-floor"></div>
+            <div class="visual-caption">BASKETBALL TRAINING CENTER <b>01 / 03</b></div>
+        </section>
+    </main>
+    <script>
+        function togglePassword() {
+            const input = document.getElementById("matKhau");
+            const button = document.querySelector(".show-password");
+            const hidden = input.type === "password";
+            input.type = hidden ? "text" : "password";
+            button.textContent = hidden ? "Ẩn" : "Hiện";
+        }
+    </script>
+</body>
+</html>

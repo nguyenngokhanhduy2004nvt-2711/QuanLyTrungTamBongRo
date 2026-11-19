@@ -1,4 +1,4 @@
-# BÁO CÁO TIẾN ĐỘ THỰC TẬP TỐT NGHIỆP - TUẦN 5
+# BÁO CÁO TIẾN ĐỘ THỰC TẬP CHUYÊN NGÀNH- TUẦN 5
 
 - **Đề tài:** Website quản lý trung tâm bóng rổ (3 phân hệ: Admin, Huấn luyện viên, Phụ huynh)
 - **Sinh viên thực hiện:** Nguyễn Ngô Khánh Duy

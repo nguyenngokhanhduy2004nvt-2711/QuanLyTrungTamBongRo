@@ -83,17 +83,7 @@ flowchart TD
 
 ---
 
-## 3. Vướng mắc thực tế và Đề xuất
-- **Vướng mắc:**
-  1. Do tham gia nhận đề tài trễ hơn tiến độ chung 4 tuần nên khối lượng còn lại lớn: hiện mới hoàn thành khung dự án, giao diện và thiết kế cơ sở dữ liệu, chưa có chức năng nghiệp vụ nào chạy hoàn chỉnh.
-  2. Phần mã đăng nhập và dữ liệu giả lập mới viết, chưa có bằng chứng kiểm thử (chưa có `evidence/` cho `FR-01`).
-- **Đề xuất với giảng viên:**
-  1. Em xin thầy thống nhất lộ trình triển khai cuốn chiếu từ tuần 7 đến tuần 12 và mốc nộp các yêu cầu mức *Bắt buộc*.
-  2. Em xin xác nhận việc sử dụng SQL Server cục bộ (Express/LocalDB) phục vụ lập trình và kiểm thử cá nhân, và việc lưu mã nguồn trên GitHub.
-
----
-
-## 4. Kế hoạch triển khai tuần tới (Tuần 7)
+## 3. Kế hoạch triển khai tuần tới (Tuần 7)
 - Hoàn tất tích hợp và kiểm thử đăng nhập, phân quyền (`FR-01`); chụp bằng chứng vào `evidence/FR-01` và cập nhật `docs/truy_vet.csv`.
 - Nạp và kiểm chứng dữ liệu giả lập trên SQL Server cục bộ.
 - Hiện thực `FR-02`: Admin quản lý danh sách HLV và học viên.

@@ -88,9 +88,8 @@ flowchart TD
   1. Do tham gia nhận đề tài trễ hơn tiến độ chung 4 tuần nên khối lượng còn lại lớn: hiện mới hoàn thành khung dự án, giao diện và thiết kế cơ sở dữ liệu, chưa có chức năng nghiệp vụ nào chạy hoàn chỉnh.
   2. Phần mã đăng nhập và dữ liệu giả lập mới viết, chưa có bằng chứng kiểm thử (chưa có `evidence/` cho `FR-01`).
 - **Đề xuất với giảng viên:**
-  1. Em xin thầy xác nhận bản đặc tả để dự án được chuyển sang trạng thái "đã giao".
-  2. Em xin thầy thống nhất lộ trình triển khai cuốn chiếu từ tuần 7 đến tuần 12 và mốc nộp các yêu cầu mức *Bắt buộc*.
-  3. Em xin xác nhận việc sử dụng SQL Server cục bộ (Express/LocalDB) phục vụ lập trình và kiểm thử cá nhân, và việc lưu mã nguồn trên GitHub.
+  1. Em xin thầy thống nhất lộ trình triển khai cuốn chiếu từ tuần 7 đến tuần 12 và mốc nộp các yêu cầu mức *Bắt buộc*.
+  2. Em xin xác nhận việc sử dụng SQL Server cục bộ (Express/LocalDB) phục vụ lập trình và kiểm thử cá nhân, và việc lưu mã nguồn trên GitHub.
 
 ---
 
